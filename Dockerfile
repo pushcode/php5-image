@@ -18,5 +18,3 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ 
 ADD default.conf /etc/nginx/sites-available/default
 
 RUN echo "<?php phpinfo(); ?>" > /var/www/phpinfo.php
-
-CMD service php5-fpm start && nginx
